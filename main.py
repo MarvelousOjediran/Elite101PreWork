@@ -3,7 +3,7 @@ print("Hello, Welcome to the Marvelous ChatBot!");
 collect_name = str(input("What is your name?: "));
 collect_age = int(input("What is your age?: ")); 
 
-print("Hello"", "+collect_name+"!","How can I help you?" );  
+print("Hello"", "+collect_name+"!", "I wish i was",collect_age,"!","How can I help you?" );  
 
 
 print("1. Placeholder 1");
@@ -22,7 +22,8 @@ elif user_choice == 3:
 elif user_choice == 4:
     print("Placeholder 4 selected.")
 else:
-    print("Invalid choice")
+    print("Invalid choice"); 
+print("Bye",collect_name+"!","see you next time!")
                         
 
 
