@@ -16,26 +16,37 @@ def new_rec(user_choice, collect_age):
 
 def continue_bot(collect_name, collect_age): 
     while True:  # Keep showing menu until user exits
-        print("\n1. New Recommendations")
+        print("\n" + "="*50)
+        print("🎵 ASAKE CHATBOT MENU 🎵")
+        print("1. New Recommendations")
         print("2. Learn About Asake") 
         print("3. Next Asake Concert")
         print("4. Exit")
         
-        user_choice = int(input("Pick an option from the menu for help: "))
-        
+        try:
+            user_choice = int(input("Pick an option from the menu (1-4): "))
+        except ValueError:
+            print("❌ Please enter a valid number (1-4)")
+            continue
+            
         if user_choice == 1:
             new_recommendations = new_rec(user_choice, collect_age)
-            print(new_recommendations)
+            print("\n" + new_recommendations)
+            input("\nPress Enter to continue...")  # Pause so user can read
             
         elif user_choice == 2:
-            print("Asake is a Nigerian singer and songwriter known for his amazing afrobeats and amapiano music! He rose to fame in 2022 with his hit songs.")
+            print("\n🎤 Asake is a Nigerian singer and songwriter known for his amazing afrobeats and amapiano music! He rose to fame in 2022 with his hit songs.")
+            input("\nPress Enter to continue...")  # Pause so user can read
+            
         elif user_choice == 3:
-            print("Next Asake concert: December 15th, 2024 at Lagos Arena! Tickets available soon.")
+            print("\n🎭 Next Asake concert: December 15th, 2024 at Lagos Arena! Tickets available soon.")
+            input("\nPress Enter to continue...")  # Pause so user can read
+            
         elif user_choice == 4:
-            print("Thanks for trying out Asake Chatbot, "+collect_name+"! Have a great day!")
-            return False  # Exit the loop and function
+            print("\n✅ Thanks for trying out Asake Chatbot, "+collect_name+"! Have a great day!")
+            break  # Exit the loop and function
         else:
-            print("Invalid choice. Please try again.")
+            print("❌ Invalid choice. Please select a number between 1-4.")
 
 def recommend_songs(age):
     #Function to recommend songs based on user's age
@@ -51,13 +62,13 @@ print("Hello, Welcome to the Asake ChatBot!")
 collect_name = str(input("What is your name?: "))
 collect_age = int(input("What is your age?: ")) 
 
-print("Hello", collect_name+"!", "Asake ChatBot will give you songs based on your age of ",collect_age," to match your vibe!","I'll find something that you'll like!" )  
+print("Hello", collect_name+"!", "Asake ChatBot will give you songs based on your age of", collect_age, "to match your vibe!", "I'll find something that you'll like!" )  
  
-print("####################################################################################################################################")
+print("="*70)
 song_rec = recommend_songs(collect_age)
 print(song_rec)
 
-continue_chatbot = str(input("Would you like to test out more features? (Yes) or (No) "))
+continue_chatbot = str(input("\nWould you like to test out more features? (Yes) or (No): "))
 
 if continue_chatbot.lower() == "yes":
     # Call the continue_bot function with the loop
@@ -65,4 +76,4 @@ if continue_chatbot.lower() == "yes":
 else:
     print("Thanks for trying out Asake Chatbot, Have a great day, "+ collect_name+"!")
 
-print("Bye", collect_name+"!", "see you next time!")
+print("\nBye", collect_name+"!", "see you next time!")
