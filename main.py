@@ -32,15 +32,15 @@ def continue_bot(collect_name, collect_age):
         if user_choice == 1:
             new_recommendations = new_rec(user_choice, collect_age)
             print("\n" + new_recommendations)
-            input("\nPress Enter to continue...")  # Pause so user can read
+            input("\nPress Enter to continue...")  
             
         elif user_choice == 2:
-            print("\n🎤 Asake is a Nigerian singer and songwriter known for his amazing afrobeats and amapiano music! He rose to fame in 2022 with his hit songs.")
-            input("\nPress Enter to continue...")  # Pause so user can read
+            print("\n🎤 Asake is a Nigerian singer and songwriter who rose to fame in 2022 with his debut album, Mr. Money with the Vibe. Since then he has collabed with artists like Gunna, Olamide, Ayra Starr, and Wizkid, solidifying himself as one of the modern cornerstones of Nigerian Afrobeats.")
+            input("\nPress Enter to continue...")   
             
         elif user_choice == 3:
             print("\n🎭 Next Asake concert: December 15th, 2024 at Lagos Arena! Tickets available soon.")
-            input("\nPress Enter to continue...")  # Pause so user can read
+            input("\nPress Enter to continue...")   
             
         elif user_choice == 4:
             print("\n✅ Thanks for trying out Asake Chatbot, "+collect_name+"! Have a great day!")
