@@ -35,7 +35,7 @@ def continue_bot(collect_name, collect_age):
             input("\nPress Enter to continue...")  
             
         elif user_choice == 2:
-            print("\n🎤 Asake is a Nigerian singer and songwriter who rose to fame in 2022 with his debut album, Mr. Money with the Vibe. Since then he has collabed with artists like Gunna, Olamide, Ayra Starr, and Wizkid, solidifying himself as one of the modern cornerstones of Nigerian Afrobeats.")
+            print("\n🎤 Asake is a Nigerian singer and songwriter who rose to fame in 2022 with his debut album, Mr. Money with the Vibe. Since then, Asake has collabed with artists like Gunna, Olamide, Ayra Starr, and Wizkid, solidifying himself as one of the modern cornerstones of Nigerian Afrobeats.")
             input("\nPress Enter to continue...")   
             
         elif user_choice == 3:
