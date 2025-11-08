@@ -1,9 +1,17 @@
-print("Hello, Welcome to the Marvelous ChatBot!");
 
+#python for displaying song based on age
+
+     
+thirteen_under = "Songs: Bandana, Only Me, and Great Guy are awesome choices with steady beats and good vocals!"
+eighteen_to_twenty_five = ""
+
+
+print("Hello, Welcome to the Asake ChatBot!");
+#collect name and age for song reccomendation
 collect_name = str(input("What is your name?: "));
 collect_age = int(input("What is your age?: ")); 
 
-print("Hello"", "+collect_name+"!", "I wish i was",collect_age,"!","How can I help you?" );  
+print("Hello"", "+collect_name+"!", "Asake ChatBot will give you songs based on your age of ",collect_age," to match your vibe!","I'll find something that you'll like!" );  
 
 
 print("1. Placeholder 1");
