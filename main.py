@@ -39,7 +39,7 @@ def continue_bot(collect_name, collect_age):
             input("\nPress Enter to continue...")   
             
         elif user_choice == 3:
-            print("\n🎭 Next Asake concert: December 20th, 2025 in Nairobi Kenya! Tickets available soon.")
+            print("\n🎭 Next Asake concert: December 20th, 2025 in Nairobi, Kenya! Tickets available soon.")
             input("\nPress Enter to continue...")   
             
         elif user_choice == 4:
