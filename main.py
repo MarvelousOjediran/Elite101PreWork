@@ -1,4 +1,4 @@
-#python for displaying song based on age
+
 
 thirteen_under = "Songs: Bandana, Only Me, and Great Guy are awesome choices with steady beats and good vocals!"
 fourteen_to_twenty_five = "Songs: Lonely at the Top, Amapiano, and New Religion are fire songs with catchy lyrics!"
@@ -39,7 +39,7 @@ def continue_bot(collect_name, collect_age):
             input("\nPress Enter to continue...")   
             
         elif user_choice == 3:
-            print("\n🎭 Next Asake concert: December 15th, 2024 at Lagos Arena! Tickets available soon.")
+            print("\n🎭 Next Asake concert: December 20th, 2025 in Nairobi Kenya! Tickets available soon.")
             input("\nPress Enter to continue...")   
             
         elif user_choice == 4:
